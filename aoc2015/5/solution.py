@@ -4,7 +4,7 @@ def nice_strings():
     How many strings are nice under new rules?
     """
 
-    filename = '/home/goddriver/Documents/python/AOC2015/5/input'
+    filename = '/home/goddriver/Documents/exercises/aoc2015/5/input'
 
     with open(filename) as f:
         lines = f.readlines()
