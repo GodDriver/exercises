@@ -1,7 +1,10 @@
 def number_of_houses():
-    """Вычисление числа домов, которые получат хотя бы один подарок."""
+    """
+    How many houses receive at least one present?
+    This year, how many houses receive at least one present?
+    """
 
-    filename = '/home/goddriver/Documents/python/AOC2015/3/input'
+    filename = '/home/goddriver/Documents/exercises/aoc2015/3/input'
     
     with open(filename) as f:
         lines = f.readlines()
