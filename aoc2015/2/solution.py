@@ -19,20 +19,16 @@ def calculation_square_feet_of_wrapping_paper_and_feet_of_ribbon():
         if ((min(l, w, h) == w and max(l, w, h) == h)
             or (min(l, w, h) == h and max(l, w, h) == w)):
             average_of_numbers = l
-        elif ((min(l, w, h) == l and max(l, w ,h) == h)
+        elif ((min(l, w, h) == l and max(l, w, h) == h)
               or (min(l, w, h) == h and max(l, w, h) == l)):
             average_of_numbers = w
         else:
             average_of_numbers = h
-        square_feet_of_slack = (min(l, w, h)
-                                * average_of_numbers)
-        square_feet_one_box = (2 * ((l * w)
-                                    + (w * h)
-                                    + (l * h))
+        square_feet_of_slack = (min(l, w, h) * average_of_numbers)
+        square_feet_one_box = (2 * ((l * w) + (w * h) + (l * h))
                                + square_feet_of_slack)
         square_feet += square_feet_one_box
-        feet_of_ribbon_one_box = (2 * (min(l, w, h)
-                                       + average_of_numbers)
+        feet_of_ribbon_one_box = (2 * (min(l, w, h) + average_of_numbers)
                                   + l * w * h)
         feet_of_ribbon += feet_of_ribbon_one_box
     print(f"Total square feet of wrapping paper is {square_feet}.")
