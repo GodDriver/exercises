@@ -20,9 +20,8 @@ def floor_and_basement():
                 floor -= 1
                 first_enter += 1
             if floor == -1 and i == 0:
-                print(f"First enter the basement was on "
-                      + str(first_enter) + " step.")
+                print(f"First enter the basement was on {first_enter} step.")
                 i += 1
-    print(f"Floor in the instructions is " + str(floor) + ".")
+    print(f"Floor in the instructions is {floor}.")
 
 floor_and_basement()
