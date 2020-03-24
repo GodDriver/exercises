@@ -1,6 +1,6 @@
 import math
 
-def the_fuel():
+def the_tyranny_of_the_rocket_equation():
     """
     What is the sum of the fuel requirements for all of the modules on your spacecraft?
     What is the sum of the fuel requirements for all of the modules on your spacecraft
@@ -26,4 +26,4 @@ def the_fuel():
 is {sum_of_the_fuel}.")
     print(f"The sum of the fuel requirements for all of the modules on your spacecraft \
 when also taking into account the mass of the added fuel is {sum_of_the_fuel_with_added}.")
-the_fuel()
+the_tyranny_of_the_rocket_equation()
