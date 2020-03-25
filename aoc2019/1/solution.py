@@ -8,18 +8,18 @@ def the_tyranny_of_the_rocket_equation():
     """
 
     filename = '/home/goddriver/Documents/exercises/aoc2019/1/input'
-    with open(filename) as f:
-        lines = f.readlines()
+    with open(filename) as f_input:
+        lines = f_input.readlines()
 
     sum_of_the_fuel = 0
     sum_of_the_fuel_with_added = 0
 
     for line in lines:
         #part 1
-        sum_of_the_fuel += math.floor(int(line)/3)-2
+        sum_of_the_fuel += math.floor(int(line)/3) - 2
         #part 2
         while int(line) > 5:
-            line = math.floor(int(line)/3)-2
+            line = math.floor(int(line)/3) - 2
             sum_of_the_fuel_with_added += int(line)
 
     print(f"The sum of the fuel requirements for all of the modules on your spacecraft \
