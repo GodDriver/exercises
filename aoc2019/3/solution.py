@@ -1,3 +1,5 @@
+"""Day 3"""
+
 def crossed_wires():
     """
     What is the Manhattan distance from the central port to the closest
