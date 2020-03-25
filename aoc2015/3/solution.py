@@ -1,3 +1,5 @@
+"""Day 3"""
+
 def number_of_houses():
     """
     How many houses receive at least one present?
@@ -5,86 +7,82 @@ def number_of_houses():
     """
 
     filename = '/home/goddriver/Documents/exercises/aoc2015/3/input'
-    
-    with open(filename) as f:
-        lines = f.readlines()
+    with open(filename) as f_input:
+        lines = f_input.readlines()
     # previous year
-    x = 0
-    y = 0
+    x_int = 0
+    y_int = 0
     coordinates_of_houses_prev_year = []
-    coordinates_of_houses_prev_year.append((x,y))
-    
+    coordinates_of_houses_prev_year.append((x_int, y_int))
     for line in lines:
-        for el in line:
-            if el == '^':
-                y += 1
-                coordinates_of_houses_prev_year.append((x,y))
-            elif el == 'v':
-                y -= 1
-                coordinates_of_houses_prev_year.append((x,y))
-            elif el == '>':
-                x += 1
-                coordinates_of_houses_prev_year.append((x,y))
-            elif el == '<':
-                x -= 1
-                coordinates_of_houses_prev_year.append((x,y))
-    
+        for element in line:
+            if element == '^':
+                y_int += 1
+                coordinates_of_houses_prev_year.append((x_int, y_int))
+            elif element == 'v':
+                y_int -= 1
+                coordinates_of_houses_prev_year.append((x_int, y_int))
+            elif element == '>':
+                x_int += 1
+                coordinates_of_houses_prev_year.append((x_int, y_int))
+            elif element == '<':
+                x_int -= 1
+                coordinates_of_houses_prev_year.append((x_int, y_int))
     print(f"Number of houses is \
 {len(list(set(coordinates_of_houses_prev_year)))}.")
     # next year
-    x = 0
-    y = 0
-    xx = 0
-    yy = 0
+    x_int = 0
+    y_int = 0
+    xx_int = 0
+    yy_int = 0
     i = 0
     coordinates_of_houses_santa = []
     coordinates_of_houses_robo_santa = []
     coordinates_of_houses_next_year = []
-    coordinates_of_houses_santa.append((x,y))
-    coordinates_of_houses_robo_santa.append((xx,yy))
+    coordinates_of_houses_santa.append((x_int, y_int))
+    coordinates_of_houses_robo_santa.append((xx_int, yy_int))
 
     for line in lines:
-        for el in line:
-            if el == '^':
+        for element in line:
+            if element == '^':
                 if i % 2 == 0:
-                    y += 1
-                    coordinates_of_houses_santa.append((x,y))
+                    y_int += 1
+                    coordinates_of_houses_santa.append((x_int, y_int))
                     i += 1
                 else:
-                    yy += 1
-                    coordinates_of_houses_robo_santa.append((xx,yy))
+                    yy_int += 1
+                    coordinates_of_houses_robo_santa.append((xx_int, yy_int))
                     i += 1
-            elif el == 'v':
+            elif element == 'v':
                 if i % 2 == 0:
-                    y -= 1
-                    coordinates_of_houses_santa.append((x,y))
+                    y_int -= 1
+                    coordinates_of_houses_santa.append((x_int, y_int))
                     i += 1
                 else:
-                    yy -= 1
-                    coordinates_of_houses_robo_santa.append((xx,yy))
+                    yy_int -= 1
+                    coordinates_of_houses_robo_santa.append((xx_int, yy_int))
                     i += 1
-            elif el == '>':
+            elif element == '>':
                 if i % 2 == 0:
-                    x += 1
-                    coordinates_of_houses_santa.append((x,y))
+                    x_int += 1
+                    coordinates_of_houses_santa.append((x_int, y_int))
                     i += 1
                 else:
-                    xx += 1
-                    coordinates_of_houses_robo_santa.append((xx,yy))
+                    xx_int += 1
+                    coordinates_of_houses_robo_santa.append((xx_int, yy_int))
                     i += 1
-            elif el == '<':
+            elif element == '<':
                 if i % 2 == 0:
-                    x -= 1
-                    coordinates_of_houses_santa.append((x,y))
+                    x_int -= 1
+                    coordinates_of_houses_santa.append((x_int, y_int))
                     i += 1
                 else:
-                    xx -= 1
-                    coordinates_of_houses_robo_santa.append((xx,yy))
+                    xx_int -= 1
+                    coordinates_of_houses_robo_santa.append((xx_int, yy_int))
                     i += 1
 
     coordinates_of_houses_next_year = (coordinates_of_houses_santa
                                        + coordinates_of_houses_robo_santa)
-    
     print(f"Number of houses next year is \
 {len(list(set(coordinates_of_houses_next_year)))}.")
-number_of_houses()            
+number_of_houses()
