@@ -2,9 +2,10 @@ import math
 
 def the_tyranny_of_the_rocket_equation():
     """
-    What is the sum of the fuel requirements for all of the modules on your spacecraft?
-    What is the sum of the fuel requirements for all of the modules on your spacecraft
-    when also taking into account the mass of the added fuel?
+    What is the sum of the fuel requirements for all of the modules on your
+    spacecraft?
+    What is the sum of the fuel requirements for all of the modules on your
+    spacecraft when also taking into account the mass of the added fuel?
     """
 
     filename = '/home/goddriver/Documents/exercises/aoc2019/1/input'
@@ -22,8 +23,9 @@ def the_tyranny_of_the_rocket_equation():
             line = math.floor(int(line)/3) - 2
             sum_of_the_fuel_with_added += int(line)
 
-    print(f"The sum of the fuel requirements for all of the modules on your spacecraft \
-is {sum_of_the_fuel}.")
-    print(f"The sum of the fuel requirements for all of the modules on your spacecraft \
-when also taking into account the mass of the added fuel is {sum_of_the_fuel_with_added}.")
+    print(f"The sum of the fuel requirements for all of the modules on your \
+spacecraft is {sum_of_the_fuel}.")
+    print(f"The sum of the fuel requirements for all of the modules on your \
+spacecraft when also taking into account the mass of the added fuel is \
+{sum_of_the_fuel_with_added}.")
 the_tyranny_of_the_rocket_equation()
