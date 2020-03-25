@@ -1,4 +1,7 @@
+"""Day 1"""
+
 import math
+
 
 def the_tyranny_of_the_rocket_equation():
     """
