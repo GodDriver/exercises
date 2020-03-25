@@ -1,7 +1,9 @@
 def crossed_wires():
     """
-    What is the Manhattan distance from the central port to the closest intersection?
-    What is the fewest combined steps the wires must take to reach an intersection?
+    What is the Manhattan distance from the central port to the closest
+    intersection?
+    What is the fewest combined steps the wires must take to reach an
+    intersection?
     """
     filename = '/home/goddriver/Documents/exercises/aoc2019/3/input'
 
@@ -9,10 +11,8 @@ def crossed_wires():
     coord_2 = {}
     sum_distances = []
     sum_steps = []
-    
     with open(filename, 'r') as f_i:
         lines = f_i.readlines()
-            
     for line in lines:
         x_int, y_int = 0, 0
         steps = 0
@@ -61,8 +61,8 @@ def crossed_wires():
         dist_x, dist_y = key
         sum_distances.append(abs(int(dist_x)) + abs(int(dist_y)))
         sum_steps.append(int(coord_1.get(key)) + int(coord_2.get(key)))
-    print(f"Manhattan distance from the central port to the closest intersection is \
-{min(sum_distances)}.")
-    print(f"The fewest combined steps the wires must take to reach an intersection is \
-{min(sum_steps)}.")
+    print(f"Manhattan distance from the central port to the closest \
+intersection is {min(sum_distances)}.")
+    print(f"The fewest combined steps the wires must take to reach an \
+intersection is {min(sum_steps)}.")
 crossed_wires()

@@ -1,13 +1,11 @@
 def secure_container():
     """
-    How many different passwords within the range given in your puzzle input meet these
-    criteria?
-    How many different passwords within the range given in your puzzle input meet all
-    of the criteria?
+    How many different passwords within the range given in your puzzle input
+    meet these criteria?
+    How many different passwords within the range given in your puzzle input
+    meet all of the criteria?
     """
-    
     start, finish = 172851, 675869
-    
     different_passwords = 0
     different_passwords_part_two = 0
 
@@ -29,5 +27,6 @@ def secure_container():
             if 2 in lst:
                 different_passwords_part_two += 1
     print(f"Different passwords are {different_passwords}.")
-    print(f"Different passwords in Part Two are {different_passwords_part_two}.")
+    print(f"Different passwords in Part Two are \
+{different_passwords_part_two}.")
 secure_container()
