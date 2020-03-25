@@ -1,11 +1,13 @@
+"""Day 2"""
+
 def calculation_square_feet_of_wrapping_paper_and_feet_of_ribbon():
     """
     How many total square feet of wrapping paper should they order?
     How many total feet of ribbon should they order?
     """
     filename = '/home/goddriver/Documents/exercises/aoc2015/2/input'
-    with open(filename) as f:
-        lines = f.readlines()
+    with open(filename) as f_input:
+        lines = f_input.readlines()
 
     square_feet = 0
     feet_of_ribbon = 0
@@ -15,7 +17,7 @@ def calculation_square_feet_of_wrapping_paper_and_feet_of_ribbon():
         numbers = line.split("x")
         numbers = list(map(int, numbers))
         # l - length, w - width, h - height
-        (l, w, h) = numbers
+        l, w, h = numbers
         if ((min(l, w, h) == w and max(l, w, h) == h)
             or (min(l, w, h) == h and max(l, w, h) == w)):
             average_of_numbers = l
@@ -33,5 +35,4 @@ def calculation_square_feet_of_wrapping_paper_and_feet_of_ribbon():
         feet_of_ribbon += feet_of_ribbon_one_box
     print(f"Total square feet of wrapping paper is {square_feet}.")
     print(f"Total feet of ribbon is {feet_of_ribbon}.")
-
 calculation_square_feet_of_wrapping_paper_and_feet_of_ribbon()
