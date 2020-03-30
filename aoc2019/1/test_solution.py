@@ -1,11 +1,11 @@
-"""Test for day 1"""
+"""Tests for day 1"""
 
 import unittest
 from solution import get_fuel_one_module, get_fuel_one_module_with_added
 
 
 class SolutionTestCase(unittest.TestCase):
-    """Тесты для 'solution.py'."""
+    """Tests for 'solution.py'."""
 
     def test_get_fuel_one_module(self):
         """Расчет топлива для одного модуля работает правильно?"""
