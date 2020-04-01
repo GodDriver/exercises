@@ -29,7 +29,8 @@ def get_basement(instructions: str) -> int:
             i += 1
             return position
 
-if __name__ == "__main__":
+def main():
+    """Main."""
     filename = '/home/goddriver/Documents/exercises/aoc2015/1/input'
 
     with open(filename) as f_i:
@@ -38,3 +39,6 @@ if __name__ == "__main__":
     print(f"In floor {get_floor(elements)}.")
     print(f"First enter the basement is at character position \
 {get_basement(elements)}.")
+
+if __name__ == "__main__":
+    main()
