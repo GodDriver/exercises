@@ -13,7 +13,8 @@ def get_fuel_one_module_with_added(mass: int) -> int:
         fuel_one_module_with_added += mass
     return fuel_one_module_with_added
 
-if __name__ == "__main__":
+def main():
+    """Main."""
     filename = '/home/goddriver/Documents/exercises/aoc2019/1/input'
     with open(filename) as f_i:
         lines = f_i.readlines()
@@ -33,3 +34,6 @@ spacecraft is {sum_of_the_fuel}.")
     print(f"The sum of the fuel requirements for all of the modules on your \
 spacecraft when also taking into account the mass of the added fuel is \
 {sum_of_the_fuel_with_added}.")
+
+if __name__ == "__main__":
+    main()
