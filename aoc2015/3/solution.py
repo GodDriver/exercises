@@ -66,7 +66,8 @@ def get_number_of_houses_next_year(moves: str) -> int:
     return len(list(set(coordinates_of_houses_santa
                         + coordinates_of_houses_robo_santa)))
 
-if __name__ == "__main__":
+def main():
+    """Main."""
     filename = '/home/goddriver/Documents/exercises/aoc2015/3/input'
 
     with open(filename) as f_input:
@@ -76,3 +77,6 @@ if __name__ == "__main__":
     # next year
     print(f"Number of houses next year is \
 {get_number_of_houses_next_year(instructions)}.")
+
+if __name__ == "__main__":
+    main()
