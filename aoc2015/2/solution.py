@@ -37,7 +37,8 @@ def get_feet_of_ribbon(sizes: str) -> int:
                               + l * w * h)
     return feet_of_ribbon_one_box
 
-if __name__ == "__main__":
+def main():
+    """Main."""
     filename = '/home/goddriver/Documents/exercises/aoc2015/2/input'
     with open(filename) as f_input:
         lines = f_input.readlines()
@@ -50,3 +51,6 @@ if __name__ == "__main__":
         feet_of_ribbon += get_feet_of_ribbon(line)
     print(f"They should order {square_feet} square feets of wrapping paper.")
     print(f"They should order {feet_of_ribbon} feets of ribbon.")
+
+if __name__ == "__main__":
+    main()
