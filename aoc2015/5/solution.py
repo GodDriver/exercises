@@ -50,7 +50,8 @@ def get_nice_string_new_rules(string: str) -> bool:
     else:
         return False
 
-if __name__ == "__main__":
+def main():
+    """Main."""
     filename = '/home/goddriver/Documents/exercises/aoc2015/5/input'
 
     with open(filename) as f_input:
@@ -68,3 +69,6 @@ if __name__ == "__main__":
     print(f"Number of nice strings is {nice_lines}.")
     print(f"Number of nice strings under new rules is \
 {nice_lines_new_rules}.")
+
+if __name__ == "__main__":
+    main()
