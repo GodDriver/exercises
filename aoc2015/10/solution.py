@@ -5,8 +5,8 @@ from itertools import groupby
 
 def get_look_and_say(sequence: str) -> str:
     """Calculation Look-and-say sequence."""
-    return ''.join(str(len([1 for _ in v])) + k for k, v in \
-                   groupby(sequence))
+    return ''.join(str(len(list(grouper))) + element for element, grouper \
+                   in groupby(sequence))
 
 if __name__ == "__main__":
     puzzle_input = '1113222113'
