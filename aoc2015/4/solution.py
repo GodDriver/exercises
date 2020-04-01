@@ -18,9 +18,13 @@ def get_answer(secret_key: str, start_with: str) -> int:
         else:
             return answer
 
-if __name__ == "__main__":
+def main():
+    """Main."""
     puzzle_input = 'bgvyzdsv'
     print(f"The lowest number it combines with to make an MD5 hash starting \
 with five zeroes is {get_answer(puzzle_input, '0' * 5)}.")
     print(f"The lowest number it combines with to make an MD5 hash starting \
 with six zeroes is {get_answer(puzzle_input, '0' * 6)}.")
+
+if __name__ == "__main__":
+    main()
