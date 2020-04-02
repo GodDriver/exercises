@@ -61,9 +61,9 @@ def main():
     nice_lines_new_rules = 0 #New rules
 
     for line in lines:
-        if get_nice_string(line) == 1:
+        if get_nice_string(line):
             nice_lines += 1
-        if get_nice_string_new_rules(line) == 1:
+        if get_nice_string_new_rules(line):
             nice_lines_new_rules += 1
 
     print(f"Number of nice strings is {nice_lines}.")
