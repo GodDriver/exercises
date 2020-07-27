@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class day1 {
     public static void main(String[] args) throws  Exception {
-        String fileName = "/home/vadik/Documents/IdeaProjects/aoc2018/src/ru/goddriver/aoc2018/input";
+        String fileName = "input";
         //Part One
         getResultingFrequency(fileName);
         //Part Two
