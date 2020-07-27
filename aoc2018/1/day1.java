@@ -39,6 +39,5 @@ public class day1 {
                 freqs.put(freq, 1);
         }
     }
-
 }
 
