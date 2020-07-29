@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class solution {
 
     public static void main(String[] args) throws Exception {
-        String fileName = "/home/vadik/Documents/IdeaProjects/exercises/src/ru/goddriver/aoc2018/day2/input";
+        String fileName = "input";
         //Part One
         System.out.println("The checksum for list of box IDs is " + getChecksum(fileName));
         //Part Two
