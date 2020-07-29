@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class solution {
 
     public static void main(String[] args) throws  Exception {
-        String fileName = "/home/vadik/Documents/IdeaProjects/exercises/src/ru/goddriver/aoc2018/day1/input";
+        String fileName = "input";
         //Part One
         System.out.println("The resulting frequency is " + getResultingFrequency(fileName));
         //Part Two
