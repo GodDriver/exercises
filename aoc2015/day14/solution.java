@@ -28,6 +28,7 @@ public class solution {
             distances.put(name, 0);
             points.put(name, 0);
         }
+        scanner.close();
         for (int afterTime = 1; afterTime <= time; afterTime++) {
             for (Map.Entry<String, Integer> entry : distances.entrySet()) {
                 String name = entry.getKey();
